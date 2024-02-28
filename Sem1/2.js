@@ -7,13 +7,7 @@
 Вывести значение переменной admin в консоль.
 */
 
-// Использовал переменную userName, т.к. наименование переменной name нежелательно.
-let userName = "Vova";
+const userName = "Vova";
+const admin = userName;
 
-// Положил переменную userName в новую переменную admin
-let admin = userName;
-
-// Вывод в консоль
 console.log(admin);
-
-
