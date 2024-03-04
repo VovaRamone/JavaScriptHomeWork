@@ -23,7 +23,7 @@ function addition(a, b) {
 }
 
 function difference(a, b) {
-    return Math.max(a, b) - Math.min(a, b);
+    return Math.abs(a - b);
 }
 
 function multiply(a, b) {

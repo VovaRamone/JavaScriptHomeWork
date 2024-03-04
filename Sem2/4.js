@@ -25,10 +25,10 @@
 
 const number = Number.parseInt(prompt("Введите целое положительное число:"));
 
-if (isNaN(number) || number <= 0) {
+if (Number.isNaN(number) || number <= 0) {
     console.log("Вы ввели некорректное значение.");
 } else {
-    let trimmedNumber = number % 1000;
+    const trimmedNumber = number % 1000;
     const hundreds = Math.floor(trimmedNumber / 100);
     const tens = Math.floor((trimmedNumber % 100) / 10);
     const units = trimmedNumber % 10;
