@@ -12,14 +12,14 @@
 function calculateSalary(number) {
     const tax = number * 0.13;
     const salaryAfterTax = number - tax;
-    console.log(`Размер заработной платы за вычетом налогов равен ${salaryAfterTax}.`);
+    console.log(`Размер заработной платы за вычетом налогов равен ${salaryAfterTax.toFixed(2)}.`);
 }
 
 const userInput = prompt("Введите число:");
+const number9 = Number.parseFloat(userInput);
 
-if (isNaN(userInput)) {
+if (Number.isNaN(number9) || !Number.isFinite(number9)) {
     console.log("Значение задано неверно");
 } else {
-    const number = Number.parseFloat(userInput);
-    calculateSalary(number);
+    calculateSalary(number9);
 }
