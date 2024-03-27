@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2c6c6c7;
+}
+
+.movies_content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movies_wrapper {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    background-color: #ebf7fc;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movies_wrapper img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.movies_wrapper h2 {
+    margin: 15px 35px 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.movies_wrapper p {
+    margin: 0 10px 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.movies_wrapper p.actors {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movies_wrapper p.description {
+    line-height: 1.5;
+}
